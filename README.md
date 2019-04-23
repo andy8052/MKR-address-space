@@ -9,5 +9,7 @@ You have a few options here:
 - Otherwise, you can trust data.json and just run `token-snapshot.py`. This will update `data.json` to the latest block
 
 You will need to add a websocket address to the python files. 
+
 TODO - move the address to an environment variable
+
 From there, you can run `balance-check.py` to verify the MKR total is 1,000,000 MKR. 
