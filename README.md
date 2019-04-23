@@ -1,6 +1,8 @@
 # MKR-address-space
 A Google Cloud Function to keep track of the addresses that have touched MKR tokens
 
+You can test this function by going to [this link](https://us-central1-causal-ratio-238015.cloudfunctions.net/MKR-holders). Please don't spam it as it will probably crash.
+
 ## Running locally
 You have a few options here:
 - If you want to start from scratch, delete the `people` list and update the `block` variable to whatever you want to start from (I recommend `block 4620855` since that is where MKR was created)
