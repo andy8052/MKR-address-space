@@ -9,9 +9,9 @@ def calc():
     with open('data.json') as data_json:
         data = json.load(data_json)
 
-    web3 = Web3(Web3.WebsocketProvider("<your websocket address>"))
+    web3 = Web3(Web3.WebsocketProvider("wss://parity0.mainnet.makerfoundation.com:8546"))
 
-    MKR_address = Web3.toChecksumAddress('0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2')
+    MKR_address = Web3.toChecksumAddress('0xc66ea802717bfb9833400264dd12c2bceaa34a6d')
     MKR_contract = web3.eth.contract(abi=tokenABI, address=MKR_address)
 
     block = int(data["block"])
